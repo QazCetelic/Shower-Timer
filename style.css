@@ -1,0 +1,118 @@
+* {
+    margin: 0 0 0 0;
+    font-family: sans-serif;
+}
+
+#background {
+    width: 100vw;
+    height: 100vh;
+}
+
+#timer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 90vmin;
+    height: min(90vmin, 45vh);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    align-items: end;
+}
+
+#timer-minutes {
+    width: 50%;
+    font-size: min(80vmin, 40vh);
+    text-align: right;
+    color: white;
+}
+
+#timer-seconds {
+    width: 50%;
+    font-size: min(40vmin, 20vh);
+    text-align: left;
+    margin-bottom: 9vmin;
+    color: white;
+    font-weight: bolder;
+}
+
+#statistics {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+
+    width: 80vw;
+    height: 10vmin;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#statistics > div {
+    margin-right: 5vmin;
+    max-width: min-content;
+}
+
+.statistic-amount {
+    color: white;
+    font-size: 10vmin;
+    font-weight: bold;
+}
+
+.statistic-rate {
+    color: white;
+    font-size: 5vmin;
+    font-weight: bolder;
+}
+
+.statistic-unit-large {
+    color: white;
+    font-size: 7vmin;
+    margin-left: 1vmin;
+}
+
+.statistic-unit-small {
+    color: white;
+    font-size: 5vmin;
+    margin-left: 1vmin;
+}
+
+#reset {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    color: white;
+    border: white solid 1vmin;
+    border-radius: 5vmin;
+    padding: 1vmin 2vmin 1vmin 2vmin;
+}
+
+#reset.clicked {
+    background-color: white;
+    color: black;
+}
+
+#reset-text {
+    font-size: 8vmin;
+}
+
+#reset-icon {
+    font-size: 11vmin;
+    vertical-align: sub;
+}
+
+#pause {
+    position: absolute;
+    bottom: 27%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    color: white;
+}

@@ -1,0 +1,43 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shower Timer</title>
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="manifest" href="./manifest.json" crossorigin="use-credentials">
+</head>
+<body>
+    <div id="background">
+        <div id="pause">
+            Tap to pause
+        </div>
+        <div id="reset">
+            <span id="reset-text">RESET</span>
+            <span id="reset-icon">↻</span>
+        </div>
+        <div id="timer">
+            <div id="timer-minutes"></div>
+            <div id="timer-seconds"></div>
+        </div>
+        <div id="statistics">
+            <div id="water-usage" class="statistic">
+                <span id="water-usage-amount" class="statistic-amount"></span><span class="statistic-unit-large">L</span>
+                <span id="water-usage-amount-per-second" class="statistic-rate"></span><span class="statistic-unit-small">L/min</span>
+            </div>
+            <div id="energy-usage" class="statistic">
+                <span id="energy-usage-amount" class="statistic-amount"></span><span class="statistic-unit-large">kWh</span>
+                <span id="energy-usage-amount-per-second" class="statistic-rate"></span><span class="statistic-unit-small">kWh/min</span>
+            </div>
+        </div>
+    </div>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js');
+        }
+    </script>
+</body>
+</html>
