@@ -8,7 +8,7 @@ const water_usage_per_second_elem = document.querySelector('#water-usage-amount-
 const energy_usage_per_second_elem = document.querySelector('#energy-usage-amount-per-second');
 const reset_button_elem = document.querySelector('#reset');
 
-const hard_limit = 60 * 10;
+const hard_limit = 60 * 10 - 1;
 const liter_per_second = 0.1;
 const kwh_per_second = 0.0576;
 
