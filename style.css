@@ -110,9 +110,11 @@
 
 #pause {
     position: absolute;
-    bottom: 27%;
+    bottom: 30%;
     left: 50%;
     transform: translate(-50%, 0);
 
-    color: white;
+    font-size: 5vmin;
+    font-style: italic;
+    color: hsla(0, 0%, 100%, 0.75);
 }
