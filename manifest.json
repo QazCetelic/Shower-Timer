@@ -1,6 +1,6 @@
 {
-  "name": "WaterTimer",
-  "short_name": "WaterTimer",
+  "name": "ShowerTimer",
+  "short_name": "ShowerTimer",
   "start_url": "/Shower-Timer/",
   "icons": [
     {
