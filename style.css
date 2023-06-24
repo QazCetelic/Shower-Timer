@@ -8,6 +8,15 @@
     height: 100vh;
 }
 
+#background.clicked {
+    scale: 1.1;
+    transition: scale 0.1s;
+}
+
+#background.paused {
+    filter: saturate(0.5);
+}
+
 #timer {
     position: absolute;
     top: 50%;
@@ -94,7 +103,7 @@
     padding: 1vmin 2vmin 1vmin 2vmin;
 }
 
-.clicked {
+#reset.clicked {
     background-color: white;
     color: black;
 }

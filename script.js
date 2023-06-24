@@ -77,10 +77,14 @@ background_elem.addEventListener("click", (event) => {
     const tapped_pause_elements = pause_elements.some((elem) => elem === event.target);
     if (tapped_pause_elements) {
         paused = !paused;
-        pause_elements.forEach((elem) => {
-            elem.classList.add(".clicked");
-            setTimeout(() => elem.classList.remove(".clicked"), 100);
-        });
+        background_elem.classList.add("clicked");
+        setTimeout(() => background_elem.classList.remove("clicked"), 100);
+        if (paused) {
+            background_elem.classList.add("paused");
+        }
+        else {
+            background_elem.classList.remove("paused");
+        }
     }
 });
 
