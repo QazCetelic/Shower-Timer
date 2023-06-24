@@ -8,11 +8,6 @@
     height: 100vh;
 }
 
-#background.clicked {
-    scale: 1.1;
-    transition: scale 0.1s;
-}
-
 #background.paused {
     filter: saturate(0.5);
 }
