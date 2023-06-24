@@ -94,7 +94,7 @@
     padding: 1vmin 2vmin 1vmin 2vmin;
 }
 
-#reset.clicked {
+.clicked {
     background-color: white;
     color: black;
 }
