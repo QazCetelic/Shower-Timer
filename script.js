@@ -26,7 +26,7 @@ const stages = [
     },
     {
         name: "Middle",
-        duration: 60 * 4,
+        duration: 60 * 3,
         hue: 60,
     },
     {
